@@ -30,10 +30,6 @@ a {
   color: #39add1;
   font-weight: 700;
   }
-  a:hover {
-    color: #111;
-  }
-
 header {
   padding-top: 10px;
 }
@@ -98,12 +94,11 @@ footer {
   height: 170px;
   transition: $mini-time;
 }
-//i have to read again about sass nesting rules
 .home,.location,.contact{
   transition: $mini-time;
 }
-.home .link:hover{
-  fill: red;
+li :hover{
+
 }
 .home:hover{
   transform: scale(1.6);
@@ -121,13 +116,18 @@ span{
 span:hover{
   color: green;
 }
-
+.logo-text{
+  opacity: 0;
+}
 .dog:hover{
   transform: scale(1.2) rotate(20deg);
 }
 @media screen and (max-width: 425px){
   .main{
     opacity: 0;
+  }
+  .logo-text{
+    opacity: 1;
   }
 }
 //dog image colors
